@@ -2,18 +2,15 @@
   "name": "@appscode/vue-ssr",
   "version": "0.0.1",
   "description": "A vue component to preserve server side rendered html",
-
   "main": "dist/vue-ssr.ssr.js",
   "browser": "dist/vue-ssr.esm.js",
   "module": "dist/vue-ssr.esm.js",
   "unpkg": "dist/vue-ssr.min.js",
-
   "files": [
     "dist/*",
     "src/**/*.vue",
     "!src/serve-dev.*"
   ],
-
   "scripts": {
     "serve": "vue-cli-service serve src/serve-dev.js",
     "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
@@ -21,7 +18,6 @@
     "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
     "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/appscode/vue-ssr.git"
@@ -38,10 +34,7 @@
     "url": "https://github.com/appscode/vue-ssr/issues"
   },
   "homepage": "https://github.com/appscode/vue-ssr#readme",
-
-  "dependencies": {
-  },
-
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
@@ -50,8 +43,14 @@
     "@rollup/plugin-replace": "^2.2.1",
     "@vue/cli-plugin-babel": "^4.1.0",
     "@vue/cli-service": "^4.1.0",
+    "@vue/eslint-config-prettier": "^5.0.0",
+    "babel-eslint": "^10.0.3",
     "cross-env": "^6.0.3",
+    "eslint": "^5.16.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-vue": "^5.0.0",
     "minimist": "^1.2.0",
+    "prettier": "^2.0.2",
     "rollup": "^1.27.13",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-terser": "^5.1.3",

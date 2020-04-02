@@ -1,17 +1,21 @@
 <script>
-import Vue from 'vue';
-import VueSsr from '@/vue-ssr.vue';
+import Vue from "vue";
+import Ssr from "@/vue-ssr.vue";
 
 export default Vue.extend({
-  name: 'ServeDev',
+  name: "ServeDev",
   components: {
-    VueSsr
-  }
+    Ssr,
+  },
 });
 </script>
 
 <template>
   <div id="app">
-    <vue-ssr />
+    <ssr eid="vue-ssr-demo">
+      <h1 id="vue-ssr-demo">
+        Hi, use me to preserve your server side rendered html :)
+      </h1>
+    </ssr>
   </div>
 </template>
